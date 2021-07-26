@@ -34,7 +34,7 @@
  * @precision: field precision specified
  *
  * @h_modifier: on if h_modifier is specified
- * @l_modifier: on if l_modifier is specified
+ * @l_modifier: on if l_modifier is specifies
  *
  */
 typedef struct parameters
