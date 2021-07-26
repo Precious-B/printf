@@ -1,0 +1,74 @@
+.TH man 1 "26 July 2021" "0.1" "Custom _printf function"
+.SH _PRINTF()
+
+.SH NAME
+.B printf
+
+.SH SYNOPSIS
+.B #include "holberton.h"
+
+.B int _printf(const char *format, ...);
+
+.SH DESCRIPTION
+- The _printf function produces output according to a format. It is simply a clone of the printf(3) function.
+
+.SH Format of the format string
+- The format string is a character string, beginning and ending in its initial shift state.
+
+.SH Flag characters
+- The character % is followed by zero or more of the following flags:
+.B %c
+- prints a character
+.br
+.B %%
+- Prints a %
+.br
+.B  %d & %i
+- Prints an integer
+.br
+.B %s
+- prints a string
+.br
+.B %b
+- prints a binary, custom specifier
+.br
+.B %o
+- Prints an octal number
+.br
+.B  %x
+- Prints a hexadecimal number
+.br
+.B %X
+- prints a hexadecimal in uppercase
+.br
+.B %u
+- prints a character
+.br
+.B %S
+- Prints a %
+.br
+.B  %p
+- Prints an address
+.br
+.B %r
+- prints a string in reverse
+.br
+.B %R
+- prints a string in rot13
+.br
+.SH The flag characters
+.B #
+- The value should be converted to an "alternate form". For o conversions, the first character of the output string is made zero (by prefixing a 0 if it was not zero already). For x and X conversions, a nonzero result has the string "0x" (or "0X" for X conversions) prepended to it. For a, A, e, E, f, F, g, and G conversions, the result will always contain a decimal point, even if no digits follow it (normally, a decimal point appears in the results of those conversions only if a digit follows). For g and G conversions, trailing zeros are not removed from the result as they would otherwise be. For other conversions, the result is undefined.
+
+.br
+.B 0
+- The value should be zero padded. For d, i, o, u, x, X, a, A, e, E, f, F, g, and G conversions, the converted value is padded on the left with zeros rather than blanks. If the 0 and - flags both appear, the 0 flag is ignored. If a precision is given with a numeric conversion (d, i, o, u, x, and X), the 0 flag is ignored. For other conversions, the behavior is undefined.
+.br
+
+.B ' '(space)
+A blank should be left before a positive number (or empty string) produced by a signed conversion.
+
+.SH The length modifier
+.B h
+
+.SH Conversion specifiers
