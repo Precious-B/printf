@@ -43,7 +43,7 @@ Your code should use the Betty style. It will be checked using betty-style.pl an
 
 *******************************************************************
 ## Authors
-[Precious Solomon](https://github.com/Precious-B)
+[Bahakae Precious Solomon](https://github.com/Precious-B)
 [Nathaniel Joshua](https://github.com/Nathans1993)
 
 
